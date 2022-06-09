@@ -823,7 +823,7 @@ margin-right: 7px;
 
 .contact-form-checkbox:checked + .contact-form-checkbox-label::before {
   background-color: var(--highlight-text-color);
-  background-image: url(/images/form_icon/chek.svg);
+  background-image: url(./images/form_icon/chek.svg);
   background-repeat: no-repeat;
   background-position: center;
   border: none;
