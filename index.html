@@ -506,16 +506,29 @@
             </li>
           </ul>
         </div>
+
         <!--SUBSCRIBE-FOOTER-->
         <div class="subscribe-container">
           <p class="subscribe-text">Подпишитесь на рассылку</p>
-          <input class="subscribe-input" type="email" placeholder="E-mail" />
-          <botton class="subscribe-btn">Подписаться</botton>
+          <div class="subscribe-form-container">
+            <input
+              class="subscribe-input"
+              type="email"
+              placeholder="E-mail"
+              name="subscribe-footer"
+              required
+            />
+            <botton type="submit" class="subscribe-btn"
+                ><span class="subscribe-btn-text">Подписаться</span><svg class="subscribe-icon">
+                  <use href="./images/sprites-svg.svg#icon-send"></use></svg></botton>
+            </div>
+          </div>
         </div>
       </div>
     </footer>
+
     <!--MODAL-->
-    <div class="backdrop" data-modal>
+    <div class="backdrop is-hidden" data-modal>
       <div class="modal">
         <p class="contact-form-title">
           Оставьте свои данные, мы вам перезвоним
@@ -543,8 +556,8 @@
                 class="contact-form-input"
                 type="tel"
                 name="user_phone_number"
-                pattern="[0-9]{3}-[0-9]{3}-[0-9]{2}-[0-9]{2}"
-                title="xxx-xxx-xx-xx"
+                pattern="[8]{1}-[0-9]{3}-[0-9]{2}-[0-9]{2}"
+                title="8-xxx-xx-xx"
                 required
               />
               <svg class="contact-form-icon">
