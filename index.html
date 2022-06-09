@@ -523,33 +523,48 @@
         <form class="contact-form">
           <label class="contact-form-field" for=""
             ><span class="contact-form-field-title">Имя</span>
-            <input
-              class="contact-form-input"
-              type="text"
-              name="user_name"
-              minlength="2"
-              required
-            />
+            <div class="contact-form-wraper">
+              <input
+                class="contact-form-input"
+                type="text"
+                name="user_name"
+                minlength="2"
+                required
+              />
+              <svg class="contact-form-icon">
+                <use href="./images/sprites-svg.svg#icon-user"></use>
+              </svg>
+            </div>
           </label>
           <label class="contact-form-field" for=""
             ><span class="contact-form-field-title">Телефон</span>
-            <input
-              class="contact-form-input"
-              type="tel"
-              name="user_phone_number"
-              pattern="[0-9]{3}-[0-9]{3}-[0-9]{2}-[0-9]{2}"
-              title="xxx-xxx-xx-xx"
-              required
-            />
+            <div class="contact-form-wraper">
+              <input
+                class="contact-form-input"
+                type="tel"
+                name="user_phone_number"
+                pattern="[0-9]{3}-[0-9]{3}-[0-9]{2}-[0-9]{2}"
+                title="xxx-xxx-xx-xx"
+                required
+              />
+              <svg class="contact-form-icon">
+                <use href="./images/sprites-svg.svg#icon-phone2"></use>
+              </svg>
+            </div>
           </label>
           <label class="contact-form-field" for=""
             ><span class="contact-form-field-title">Почта</span>
-            <input
-              class="contact-form-input"
-              type="email"
-              name="user_email"
-              required
-            />
+            <div class="contact-form-wraper">
+              <input
+                class="contact-form-input"
+                type="email"
+                name="user_email"
+                required
+              />
+              <svg class="contact-form-icon">
+                <use href="./images/sprites-svg.svg#icon-email"></use>
+              </svg>
+            </div>
           </label>
           <label class="contact-form-field-message" for=""
             ><span class="contact-form-field-title">Комментарий</span>
@@ -560,15 +575,19 @@
             ></textarea>
           </label>
           <input
-            class="contact-form-checkbox"
+            class="contact-form-checkbox visually-hidden"
             type="checkbox"
             name="user_agree"
+            id="checkbox-policy"
             required
           />
-          <label for=""
+          <label class="contact-form-checkbox-label" for="checkbox-policy"
             ><span class="contact-form-field-title-checkbox"
-              >Соглашаюсь с рассылкой и принимаю
-              <a class="contact-form-link" href="#"> Условия договора</a></span
+              >Соглашаюсь с рассылкой и принимаю&nbsp;<a
+                class="contact-form-link"
+                href="#"
+                >Условия договора</a
+              ></span
             ></label
           >
           <button class="contact-form-btn" type="submit">Отправить</button>
