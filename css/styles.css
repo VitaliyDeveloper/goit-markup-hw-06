@@ -678,7 +678,7 @@ transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   left: 50%;
   transform: translate(-50%, -50%);
   width: 530px;
-  height: 580px;
+  min-height: 580px;
   background-color: #FFFFFF;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
@@ -706,6 +706,10 @@ transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 .modal-close-btn:focus .modal-close-btn-icon {
   outline: none;
   fill: var(--highlight-text-color);
+  }
+
+  .modal-close-btn-icon {
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
   }
 
 .backdrop.is-hidden {
@@ -812,6 +816,7 @@ color: #757575;
 .contact-form-checkbox-label {
   display: flex;
   align-items: center;
+  justify-content: center;
 }
 
 .contact-form-checkbox-label::before {
@@ -871,5 +876,4 @@ color: #FFFFFF;
   cursor: pointer;
   align-self: center;
   margin-top: 30px;
-  margin-bottom: 40px;
   }
