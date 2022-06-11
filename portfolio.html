@@ -402,14 +402,16 @@
         <div class="subscribe-container">
           <p class="subscribe-text">Подпишитесь на рассылку</p>
           <form class="subscribe-form">
-            <input
-              class="subscribe-input"
-              type="email"
-              placeholder="E-mail"
-              name="subscribe_footer"
-              required
-            />
-
+            <label class="subscribe-form-label" for="mail">
+              <input
+                class="subscribe-input"
+                type="email"
+                placeholder="E-mail"
+                name="mail"
+                id="mail"
+                required
+              />
+            </label>
             <botton type="submit" class="subscribe-btn" name="subscribe"
               ><span class="subscribe-btn-text">Подписаться</span
               ><svg class="subscribe-icon">
